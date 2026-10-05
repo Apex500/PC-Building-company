@@ -87,6 +87,8 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 10px; }
 .build figcaption { padding: 16px; }
 .build figcaption b { display: block; }
 .build figcaption span { color: var(--muted); font-size: .92rem; }
+.build .specs { list-style: none; padding: 10px 0 0; margin: 10px 0 0; border-top: 1px dashed var(--border); font-size: .88rem; }
+.build .specs li { padding: 2px 0; }
 
 /* Form */
 .form { display: grid; gap: 16px; }
