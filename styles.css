@@ -61,17 +61,17 @@ code { background: var(--card); padding: 2px 6px; border-radius: 6px; }
 
 /* Scroll assembly */
 .assemble { height: 520vh; position: relative; }
-.stage { position: sticky; top: 0; height: 100vh; display: grid; align-items: center; overflow: hidden; }
-.stage-inner { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: center; width: 100%; }
-.steps-live { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 6px; }
-.steps-live li { opacity: .28; transition: opacity .4s, transform .4s; transform: translateX(0); padding: 6px 0; }
-.steps-live li b { display: block; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.2rem, 2.4vw, 1.9rem); }
+.stage { position: sticky; top: 64px; height: calc(100vh - 64px); display: grid; align-items: center; overflow: hidden; }
+.stage-inner { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 48px; justify-content: center; align-items: center; width: 100%; }
+.steps-live { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 2px; }
+.steps-live li { opacity: .28; transition: opacity .4s, transform .4s; transform: translateX(0); padding: 2px 0; }
+.steps-live li b { display: block; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.1rem, 1.8vw, 1.5rem); }
 .steps-live li span { display: block; color: var(--muted); max-height: 0; overflow: hidden; transition: max-height .45s ease; }
 .steps-live li.done { opacity: .55; }
 .steps-live li.active { opacity: 1; transform: translateX(8px); }
 .steps-live li.active span { max-height: 4em; }
 .steps-live li.active b { color: var(--accent); }
-.stage-art svg { width: 100%; max-width: 560px; max-height: 68vh; display: block; margin: 0 auto; overflow: visible; }
+.stage-art svg { width: 100%; max-width: 620px; max-height: calc(100vh - 160px); display: block; margin: 0 auto; overflow: visible; }
 .label { opacity: 0; transition: opacity .3s; }
 .label path { fill: none; stroke: #4a556b; stroke-width: 1.5; }
 .label circle { fill: var(--accent); }
