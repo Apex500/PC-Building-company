@@ -52,19 +52,11 @@ code { background: var(--card); padding: 2px 6px; border-radius: 6px; }
 
 /* Hero */
 .hero { padding: 90px 0 70px; background: radial-gradient(900px 400px at 80% 0%, rgba(54,224,160,.12), transparent); }
-.hero-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 50px; align-items: center; }
+.hero-inner > div { max-width: 680px; }
 .eyebrow { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 10px 0 18px; }
 .lead { color: var(--muted); font-size: 1.1rem; max-width: 560px; }
 .hero-cta { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
-.hero-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 22px; font-family: ui-monospace, Menlo, monospace; font-size: .92rem;
-}
-.spec { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border); }
-.spec:last-child { border: 0; }
-.spec span { color: var(--muted); }
-.spec.ok b { color: var(--accent); }
 
 /* Sections */
 .section { padding: 80px 0; }
@@ -112,7 +104,7 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 10px; }
 
 /* Mobile */
 @media (max-width: 860px) {
-  .hero-inner, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
   .nav nav a:not(.btn) { display: none; }
 }
