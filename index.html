@@ -25,17 +25,119 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="wrap hero-inner">
-        <div>
-          <p class="eyebrow">Custom PC builds &middot; Champaign, IL</p>
-          <h1>Your parts, built right.<br>Or your budget, built smart.</h1>
-          <p class="lead">I assemble PCs from parts you already have, and I design complete builds around your budget and what you actually want to do with it. Clean cable management, tested before you pick it up.</p>
-          <div class="hero-cta">
-            <a href="#request" class="btn">Request a build</a>
-            <a href="#services" class="btn btn-ghost">See services</a>
+        <p class="eyebrow">Custom PC builds &middot; Champaign, IL</p>
+        <h1 class="hero-title">Krish Builds.</h1>
+        <p class="hero-sub">Your parts, built right. Or your budget, built smart.</p>
+        <div class="hero-cta">
+          <a href="#request" class="btn">Request a build</a>
+          <a href="#services" class="btn btn-ghost">See services</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <section class="assemble" id="assemble" aria-label="How a build comes together">
+      <div class="stage">
+        <div class="wrap stage-inner">
+          <div class="stage-copy">
+            <p class="eyebrow">Built piece by piece</p>
+            <ol class="steps-live">
+              <li data-step="0"><b>Motherboard</b><span>Checked for compatibility, BIOS updated, mounted on standoffs.</span></li>
+              <li data-step="1"><b>Processor</b><span>Seated carefully, no bent pins, fresh thermal paste.</span></li>
+              <li data-step="2"><b>Memory</b><span>Installed in the right slots with XMP/EXPO turned on.</span></li>
+              <li data-step="3"><b>Storage</b><span>Fast NVMe drives, OS installed and drivers up to date.</span></li>
+              <li data-step="4"><b>Graphics card</b><span>Supported, powered properly, and matched to your games.</span></li>
+              <li data-step="5"><b>Cooling</b><span>Air or liquid, tuned for quiet at idle and cool under load.</span></li>
+              <li data-step="6"><b>Power supply</b><span>Sized with headroom, every cable routed and tied down.</span></li>
+              <li data-step="7"><b>Power on</b><span>Stress tested for stability and temps before you pick it up.</span></li>
+            </ol>
+          </div>
+          <div class="stage-art">
+            <svg id="pc" viewBox="0 0 400 480" role="img" aria-label="A PC being assembled">
+              <defs>
+                <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity=".06"/>
+                  <stop offset="1" stop-color="#ffffff" stop-opacity=".01"/>
+                </linearGradient>
+                <linearGradient id="rgb" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#36e0a0"/>
+                  <stop offset=".5" stop-color="#3fa9ff"/>
+                  <stop offset="1" stop-color="#a66bff"/>
+                </linearGradient>
+                <symbol id="fan" viewBox="-30 -30 60 60">
+                  <circle r="28" fill="#0e1117" stroke="#2f3646" stroke-width="2"/>
+                  <g class="blades" fill="#3a4254">
+                    <path d="M0 0 C6 -10 14 -18 22 -14 C14 -6 6 -2 0 0Z"/>
+                    <path d="M0 0 C6 -10 14 -18 22 -14 C14 -6 6 -2 0 0Z" transform="rotate(72)"/>
+                    <path d="M0 0 C6 -10 14 -18 22 -14 C14 -6 6 -2 0 0Z" transform="rotate(144)"/>
+                    <path d="M0 0 C6 -10 14 -18 22 -14 C14 -6 6 -2 0 0Z" transform="rotate(216)"/>
+                    <path d="M0 0 C6 -10 14 -18 22 -14 C14 -6 6 -2 0 0Z" transform="rotate(288)"/>
+                  </g>
+                  <circle r="6" fill="#2f3646"/>
+                  <circle class="fan-ring" r="27" fill="none" stroke="url(#rgb)" stroke-width="2"/>
+                </symbol>
+              </defs>
+              <rect class="case-glow" x="20" y="20" width="360" height="440" rx="22"/>
+              <rect x="20" y="20" width="360" height="440" rx="22" fill="#0d1016" stroke="#2a3140" stroke-width="3"/>
+              <g class="part" data-step="0" data-dx="-260" data-dy="0">
+                <rect x="60" y="60" width="210" height="260" rx="6" fill="#171c26" stroke="#2c3445"/>
+                <path d="M80 300 h60 M80 290 h90 M200 80 v60 M210 80 v40 M90 80 h40 v30" stroke="#263042" stroke-width="2" fill="none"/>
+                <rect x="78" y="250" width="170" height="6" rx="2" fill="#232a38"/>
+                <rect x="78" y="190" width="170" height="6" rx="2" fill="#232a38"/>
+              </g>
+              <g class="part" data-step="3" data-dx="0" data-dy="-300">
+                <rect x="90" y="208" width="80" height="12" rx="2" fill="#2b3343" stroke="#3d4659"/>
+                <rect x="96" y="211" width="18" height="6" fill="#4a556b"/><rect x="120" y="211" width="18" height="6" fill="#4a556b"/>
+              </g>
+              <g class="part" data-step="1" data-dx="0" data-dy="-320">
+                <rect x="135" y="105" width="56" height="56" rx="4" fill="#b8bfcc" stroke="#7d8696"/>
+                <rect x="147" y="117" width="32" height="32" rx="2" fill="#9aa3b2"/>
+              </g>
+              <g class="part" data-step="2" data-dx="300" data-dy="0">
+                <rect x="215" y="88" width="7" height="88" rx="1.5" fill="#202736" stroke="url(#rgb)"/>
+                <rect x="228" y="88" width="7" height="88" rx="1.5" fill="#202736" stroke="url(#rgb)"/>
+                <rect x="241" y="88" width="7" height="88" rx="1.5" fill="#202736" stroke="url(#rgb)"/>
+                <rect x="254" y="88" width="7" height="88" rx="1.5" fill="#202736" stroke="url(#rgb)"/>
+              </g>
+              <g class="part" data-step="4" data-dx="-340" data-dy="40">
+                <rect x="60" y="236" width="228" height="56" rx="6" fill="#1b2130" stroke="#3a4357"/>
+                <use href="#fan" x="72" y="242" width="44" height="44"/>
+                <use href="#fan" x="152" y="242" width="44" height="44"/>
+                <use href="#fan" x="232" y="242" width="44" height="44"/>
+                <rect class="rgb-strip" x="66" y="236" width="216" height="3" rx="1.5" fill="url(#rgb)"/>
+              </g>
+              <g class="part" data-step="5" data-dx="0" data-dy="-260">
+                <rect x="60" y="30" width="280" height="24" rx="4" fill="#161b25" stroke="#2f3646"/>
+                <use href="#fan" x="78" y="28" width="28" height="28"/>
+                <use href="#fan" x="186" y="28" width="28" height="28"/>
+                <use href="#fan" x="294" y="28" width="28" height="28"/>
+                <circle cx="163" cy="133" r="24" fill="#1a1f2a" stroke="url(#rgb)" stroke-width="3"/>
+                <path d="M176 112 C190 90 210 70 230 54 M150 112 C150 90 140 70 130 54" stroke="#2f3646" stroke-width="5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="part" data-step="5" data-dx="300" data-dy="0">
+                <use href="#fan" x="300" y="90" width="64" height="64"/>
+                <use href="#fan" x="300" y="180" width="64" height="64"/>
+                <use href="#fan" x="300" y="270" width="64" height="64"/>
+              </g>
+              <g class="part" data-step="6" data-dx="0" data-dy="260">
+                <rect x="40" y="350" width="320" height="2" fill="#2a3140"/>
+                <rect x="60" y="368" width="170" height="70" rx="6" fill="#151a23" stroke="#2f3646"/>
+                <text x="145" y="408" text-anchor="middle" fill="#4a556b" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">KRISH</text>
+                <path d="M230 390 C270 390 280 330 280 300" stroke="#2f3646" stroke-width="6" fill="none" stroke-linecap="round"/>
+              </g>
+              <rect x="20" y="20" width="360" height="440" rx="22" fill="url(#glass)" pointer-events="none"/>
+            </svg>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="wrap">
+        <p class="fill-text">Every build is cable managed, stress tested, and explained to you, so you know exactly what you're getting and why.</p>
       </div>
     </section>
 
@@ -43,7 +145,7 @@
       <div class="wrap">
         <h2>Two ways I can help</h2>
         <div class="grid-2">
-          <article class="card">
+          <article class="card reveal">
             <div class="icon">&#128295;</div>
             <h3>You have the parts, I build it</h3>
             <p>Drop off your components and I'll handle the assembly: installation, cable management, BIOS setup, Windows install and drivers, then stress testing so you know it's stable.</p>
@@ -55,7 +157,7 @@
               <li>CPU/GPU stress and temperature testing</li>
             </ul>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <div class="icon">&#128208;</div>
             <h3>You have a budget, I design it</h3>
             <p>Tell me what you'll use it for (gaming, streaming, editing, school, work) and how much you want to spend. I'll put together a parts list that gets the most out of every dollar.</p>
@@ -73,7 +175,7 @@
     <section id="process" class="section alt">
       <div class="wrap">
         <h2>How it works</h2>
-        <ol class="steps">
+        <ol class="steps reveal">
           <li><b>Send a request</b><span>Fill out the form below with your budget, goal, and whether you already have parts.</span></li>
           <li><b>We plan it</b><span>I reply with a parts list or a compatibility check, plus a quote.</span></li>
           <li><b>I build and test</b><span>Assembly, setup, and a stress test so it's ready to go.</span></li>
@@ -87,17 +189,17 @@
         <h2>Pricing</h2>
         <p class="sub">Starting prices. Parts are always at cost; you only pay for my time.</p>
         <div class="grid-3">
-          <div class="card price">
+          <div class="card reveal price">
             <h3>Build Design</h3>
             <p class="amount">$50</p>
             <p>Custom parts list for your budget and goal. Credited toward assembly if I build it.</p>
           </div>
-          <div class="card price featured">
+          <div class="card reveal price featured">
             <h3>Assembly</h3>
             <p class="amount">$50</p>
             <p>You bring the parts. Full build, OS install, and stress testing.</p>
           </div>
-          <div class="card price">
+          <div class="card reveal price">
             <h3>Design + Build</h3>
             <p class="amount">$50</p>
             <p>I design it, you buy the parts (or I order them), and I build it.</p>
@@ -111,9 +213,9 @@
         <h2>Recent builds</h2>
         <p class="sub">A few machines I've put together.</p>
         <div class="grid-3">
-          <figure class="build"><div class="ph">Photo coming soon</div><figcaption><b>RTX 5090 Build</b><span>My personal rig. Top-tier 4K gaming.</span><ul class="specs"><li>AMD Ryzen 9 9950X3D</li><li>NVIDIA RTX 5090</li><li>64 GB DDR5-6000 CL30</li><li>MSI X870E-Pro motherboard</li><li>4 TB M.2 NVMe SSD</li><li>Liquid cooled</li><li>1600 W power supply</li></ul></figcaption></figure>
-          <figure class="build"><div class="ph">Photo coming soon</div><figcaption><b>RTX 5070 Build</b><span>Built for my brother. Smooth high-settings gaming.</span><ul class="specs"><li>Intel Core i7-13700KF</li><li>NVIDIA RTX 5070</li><li>32 GB DDR5-6000 CL30</li><li>2 TB NVMe SSD</li><li>Liquid cooled</li><li>850 W power supply</li></ul></figcaption></figure>
-          <figure class="build"><div class="ph">Photo coming soon</div><figcaption><b>Everyday Office PC</b><span>Simple machine for store and office software.</span><ul class="specs"><li>Intel Core i3 (12th gen)</li><li>8 GB RAM</li><li>Integrated graphics</li></ul></figcaption></figure>
+          <figure class="build reveal"><div class="ph">Photo coming soon</div><figcaption><b>RTX 5090 Build</b><span>My personal rig. Top-tier 4K gaming.</span><ul class="specs"><li>AMD Ryzen 9 9950X3D</li><li>NVIDIA RTX 5090</li><li>64 GB DDR5-6000 CL30</li><li>MSI X870E-Pro motherboard</li><li>4 TB M.2 NVMe SSD</li><li>Liquid cooled</li><li>1600 W power supply</li></ul></figcaption></figure>
+          <figure class="build reveal"><div class="ph">Photo coming soon</div><figcaption><b>RTX 5070 Build</b><span>Built for my brother. Smooth high-settings gaming.</span><ul class="specs"><li>Intel Core i7-13700KF</li><li>NVIDIA RTX 5070</li><li>32 GB DDR5-6000 CL30</li><li>2 TB NVMe SSD</li><li>Liquid cooled</li><li>850 W power supply</li></ul></figcaption></figure>
+          <figure class="build reveal"><div class="ph">Photo coming soon</div><figcaption><b>Everyday Office PC</b><span>Simple machine for store and office software.</span><ul class="specs"><li>Intel Core i3 (12th gen)</li><li>8 GB RAM</li><li>Integrated graphics</li></ul></figcaption></figure>
         </div>
       </div>
     </section>
