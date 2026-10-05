@@ -23,7 +23,6 @@ document.getElementById("request-form").addEventListener("submit", (e) => {
 });
 
 // ---- Scroll effects ----
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 const ease = (t) => 1 - Math.pow(1 - t, 3);
 
@@ -46,6 +45,7 @@ const assemble = document.getElementById("assemble");
 const pc = document.getElementById("pc");
 const parts = [...pc.querySelectorAll(".part")];
 const caseGlow = pc.querySelector(".case-glow");
+const labels = [...pc.querySelectorAll(".label")];
 const stepItems = [...document.querySelectorAll(".steps-live li")];
 const STEPS = stepItems.length;
 
@@ -70,6 +70,11 @@ function update() {
     g.style.opacity = t;
   });
   const active = Math.min(STEPS - 1, Math.floor(pos));
+  labels.forEach((l) => {
+    const s = Number(l.dataset.step);
+    l.style.opacity = clamp(pos - s - 0.5) ;
+    l.classList.toggle("active", s === active);
+  });
   stepItems.forEach((li, i) => {
     li.classList.toggle("active", i === active);
     li.classList.toggle("done", i < active);
@@ -85,16 +90,10 @@ function update() {
   words.forEach((w, i) => w.classList.toggle("lit", i < lit));
 }
 
-if (reduceMotion) {
-  pc.classList.add("on");
-  caseGlow.style.opacity = 1;
-  stepItems.forEach((li) => li.classList.add("active"));
-} else {
-  let ticking = false;
-  const onScroll = () => {
-    if (!ticking) { ticking = true; requestAnimationFrame(() => { update(); ticking = false; }); }
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll);
-  update();
-}
+let ticking = false;
+const onScroll = () => {
+  if (!ticking) { ticking = true; requestAnimationFrame(() => { update(); ticking = false; }); }
+};
+window.addEventListener("scroll", onScroll, { passive: true });
+window.addEventListener("resize", onScroll);
+update();
