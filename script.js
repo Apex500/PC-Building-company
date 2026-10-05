@@ -1,5 +1,5 @@
-// Where build requests get sent. Change this to your real email address.
-const CONTACT_EMAIL = "YOUR_EMAIL@example.com";
+// Where build requests get sent.
+const CONTACT_EMAIL = "quantara.company@gmail.com";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
