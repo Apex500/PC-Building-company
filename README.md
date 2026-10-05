@@ -1,4 +1,4 @@
-# PC-Building-company
+# Krish Builds
 
 A simple static website for a PC building side gig: custom assembly when customers bring their own parts, and build design for a given budget and goal.
 
@@ -6,15 +6,14 @@ Plain HTML, CSS and JavaScript, so it hosts free on GitHub Pages with no build s
 
 ## Fill in your details
 
-Search for these placeholders and replace them:
+Still to fill in:
 
 | Placeholder | Where | What to put |
 | --- | --- | --- |
-| `Arya` | `index.html` (title, logo, footer) | Your name or business name |
-| `Champaign IL` | `index.html` (hero) | Where you work, or remove it |
-| `quantara.company` | `index.html` footer and `script.js` | The email that should receive requests |
-| `$50` | `index.html` pricing section | Your prices |
+| `YOUR_EMAIL@example.com` | `index.html` footer and `script.js` | The email that should receive requests |
 | Recent builds | `index.html` builds section | Photos of your builds in an `images/` folder |
+
+Store name (Krish Builds), city (Champaign, IL) and prices ($50) are already set in `index.html`.
 
 ## How the request form works
 
