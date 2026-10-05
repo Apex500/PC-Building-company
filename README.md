@@ -10,10 +10,9 @@ Still to fill in:
 
 | Placeholder | Where | What to put |
 | --- | --- | --- |
-| `YOUR_EMAIL@example.com` | `index.html` footer and `script.js` | The email that should receive requests |
 | Recent builds | `index.html` builds section | Photos of your builds in an `images/` folder |
 
-Store name (Krish Builds), city (Champaign, IL) and prices ($50) are already set in `index.html`.
+Store name (Krish Builds), city (Champaign, IL), prices ($50) and contact email (quantara.company@gmail.com) are already set.
 
 ## How the request form works
 
