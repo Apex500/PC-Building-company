@@ -10,10 +10,10 @@ Search for these placeholders and replace them:
 
 | Placeholder | Where | What to put |
 | --- | --- | --- |
-| `YOUR NAME` | `index.html` (title, logo, footer) | Your name or business name |
-| `YOUR CITY` | `index.html` (hero) | Where you work, or remove it |
-| `YOUR_EMAIL@example.com` | `index.html` footer and `script.js` | The email that should receive requests |
-| `$XX` | `index.html` pricing section | Your prices |
+| `Arya` | `index.html` (title, logo, footer) | Your name or business name |
+| `Champaign IL` | `index.html` (hero) | Where you work, or remove it |
+| `quantara.company` | `index.html` footer and `script.js` | The email that should receive requests |
+| `$50` | `index.html` pricing section | Your prices |
 | Recent builds | `index.html` builds section | Photos of your builds in an `images/` folder |
 
 ## How the request form works
